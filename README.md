@@ -32,14 +32,31 @@ You will use Jupyter Notebook, Julia (v1.6.2), and Xpress throughout the course.
 
 ![Xpress Download options](https://github.com/Pheobe-Sun/Julia-for-optimisation/blob/main/static/Install_Xpress.PNG)
 
-3. Run the installation file once downloaded. Choose 'continue to install' or 'trust' this app on receipt of security warning
-4. Installation begins. Click on 'setup' if prompted (see images [here (windows)](https://www.fico.com/fico-xpress-optimization/docs/latest/installguide/dhtml/chapinst1_sec_secwin.html))
-5. Follow the instructions, choose the 'Community License' when asked
-6. When you see the 'Choose Destination Location' page, make sure you know where Xpress is installed. The **path** will come handy for you at a later stage.
-7. Tick the box “Yes, install the Xpress Kalis Mosel addon” when asked
-8. Now you have installed Xpress. Let's **manually add the Xpress path (C:\xpressmp\bin) to the Windows environment path**
-    - Control panel -> system -> advanced system settings -> system properties -> environment variables -> change system variables -> add XPRESSDIR\bin (see [here](https://learn.sparkfun.com/tutorials/configuring-the-path-system-variable/all) for step-by-step illustration)
-    - **Restart your laptop**
+3. Run the installation file once downloaded. Choose 'continue to install' or 'trust' or 'open' this app on receipt of security warning
+4. Installation begins. 
+    - *For Windows*
+      Click on 'setup' if prompted (see instructions [here](https://www.fico.com/fico-xpress-optimization/docs/latest/installguide/dhtml/chapinst1_sec_secwin.html))
+      
+      Follow the instructions, choose the 'Community License' when asked
+      
+      When you see the 'Choose Destination Location' page, make sure you know where Xpress is installed. The **path** will come handy for you at a later stage.
+      
+    - *For Mac*
+      Follow the instructions [here](https://www.fico.com/fico-xpress-optimization/docs/latest/installguide/dhtml/chapinst1_sec_secmac.html)
+      
+
+5. Tick the box “Yes, install the Xpress Kalis Mosel addon” when asked
+6. Now you have installed Xpress. Let's add the Xpress path to the environment variables
+    - *For Windows*
+        - **manually add the Xpress path (C:\xpressmp\bin) to the Windows environment path**
+    
+            Control panel -> system -> advanced system settings -> system properties -> environment variables -> change system variables -> add XPRESSDIR\bin (see [here](https://learn.sparkfun.com/tutorials/configuring-the-path-system-variable/all) for step-by-step illustration)
+        
+        - **Restart your laptop**
+
+    - *For Mac*
+        
+        Type ``. /Applications/FICO\ Xpress/xpressmp/bin/xpvars.sh`` in your terminal. Follow the instructions [here](https://www.fico.com/fico-xpress-optimization/docs/latest/installguide/dhtml/chapinst1_sec_secmac.html)
 
 ## Install Xpress Wrapper 
 *This wrapper allows you to use Xpress in your jupyter notebook*
